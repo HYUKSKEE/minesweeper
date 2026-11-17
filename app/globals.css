@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #f3f5f9;
+  --surface: #ffffff;
+  --line: #d9e0ea;
+  --muted: #64748b;
+  --tile: #b9c8dc;
+  --tile-hover: #c8d5e6;
+  --tile-open: #eaeff6;
+  --accent: #0f766e;
+  --on-accent: #ffffff;
+  --danger: #dc2626;
+  --flag: #e11d48;
+  --n1: #2563eb;
+  --n2: #15803d;
+  --n3: #dc2626;
+  --n4: #7c3aed;
+  --n5: #b45309;
+  --n6: #0e7490;
+  --n7: #334155;
+  --n8: #be185d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0c1118;
+    --surface: #131a24;
+    --line: #243040;
+    --muted: #8a9ab0;
+    --tile: #3b4a60;
+    --tile-hover: #485a74;
+    --tile-open: #0f151d;
+    --accent: #2dd4bf;
+    --on-accent: #04201d;
+    --danger: #ef4444;
+    --flag: #fb7185;
+    --n1: #60a5fa;
+    --n2: #4ade80;
+    --n3: #f87171;
+    --n4: #a78bfa;
+    --n5: #fbbf24;
+    --n6: #22d3ee;
+    --n7: #cbd5e1;
+    --n8: #f472b6;
+  }
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-muted: var(--muted);
+  --color-tile: var(--tile);
+  --color-tile-hover: var(--tile-hover);
+  --color-tile-open: var(--tile-open);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-danger: var(--danger);
+  --color-flag: var(--flag);
+  --color-n1: var(--n1);
+  --color-n2: var(--n2);
+  --color-n3: var(--n3);
+  --color-n4: var(--n4);
+  --color-n5: var(--n5);
+  --color-n6: var(--n6);
+  --color-n7: var(--n7);
+  --color-n8: var(--n8);
+}
+
+body {
+  background: var(--canvas);
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e5ebf3;
+  }
+}
